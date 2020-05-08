@@ -1,0 +1,14 @@
+server:
+  servlet:
+    #  定义项目的访问访问路径
+    context-path: /onlineshopping-consumer-server
+    # 定义端口号
+  port: 7011
+spring:
+  application:
+    # 定义应用名称，即服务名称
+    name: onlineshopping-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5070/onlineshopping-eureka-server/eureka
