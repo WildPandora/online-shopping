@@ -6,13 +6,15 @@
         <groupId>com.os</groupId>
         <artifactId>online-shopping</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <!--<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
     <groupId>com.os</groupId>
     <artifactId>onlineshopping-product</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>onlineshopping-product</name>
     <description>Demo project for Spring Boot</description>
+
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>1.8</java.version>

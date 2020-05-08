@@ -14,6 +14,15 @@
     <name>online-shopping</name>
     <description>Demo project for Spring Boot</description>
 
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>onlineshopping-entity</module>
+        <module>onlineshopping-product</module>
+        <module>onlineshopping-consumer</module>
+        <module>onlineshopping-eureka</module>
+    </modules>
+
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
@@ -37,12 +46,12 @@
     </dependencies>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
     </build>
 
     <dependencyManagement>
