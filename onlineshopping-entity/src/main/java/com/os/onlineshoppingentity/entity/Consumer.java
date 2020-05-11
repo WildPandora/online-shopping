@@ -1,11 +1,14 @@
 package com.os.onlineshoppingentity.entity;
 
+import lombok.Data;
+
 /**
  * @program: online-shopping
  * @description: ${description}
  * @author: qianjin
  * @create: 2020-05-07 19:37
  **/
+@Data
 public class Consumer {
 
     private String name;
@@ -20,13 +23,4 @@ public class Consumer {
         this.email = "6666.qq.com";
     }
 
-    @Override
-    public String toString() {
-        return "Consumer{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", add='" + add + '\'' +
-                ", email='" + email + '\'' +
-                '}';
-    }
 }
