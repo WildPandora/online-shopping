@@ -1,5 +1,8 @@
 package com.os.onlineshoppingproduct.service;
 
+
+import com.os.onlineshoppingentity.entity.Product;
+
 /**
  * @program: online-shopping
  * @description: ${description}
@@ -8,5 +11,5 @@ package com.os.onlineshoppingproduct.service;
  **/
 public interface ProductService {
 
-    String getProduct();
+    Product getProduct();
 }

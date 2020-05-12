@@ -1,5 +1,6 @@
 package com.os.onlineshoppingproduct.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.os.onlineshoppingentity.entity.Product;
 import com.os.onlineshoppingproduct.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,8 +25,8 @@ public class ProductController {
 
     @RequestMapping(method = RequestMethod.GET,value = "/test")
     public String getProudct(){
-        String product = productService.getProduct();
-        return product;
+        Product product = productService.getProduct();
+        return JSONObject.toJSONString(product);
     }
 
 }

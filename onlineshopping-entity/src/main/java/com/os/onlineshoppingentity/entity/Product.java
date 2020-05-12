@@ -2,6 +2,8 @@ package com.os.onlineshoppingentity.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @program: online-shopping
  * @description: ${description}
@@ -9,7 +11,9 @@ import lombok.Data;
  * @create: 2020-05-07 19:37
  **/
 @Data
-public class Product {
+public class Product implements Serializable {
+
+    private static final long serialVersionUID = 6901440800228626704L;
 
     private String name;
     private int age;
