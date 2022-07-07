@@ -20,6 +20,10 @@ public class ConsumerController {
     @Resource
     private ProductFeignImpl productFeign;
 
+    /**
+     * 消费者测试
+     * @return
+     */
     @RequestMapping(method = RequestMethod.GET,value = "/getConsumer")
     public String getConsumer(){
         String product = productFeign.getProduct();
