@@ -17,4 +17,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://peer1:5060/onlineshopping-eureka-server/eureka,http://peer2:5070/onlineshopping-eureka-server/eureka,http://peer3:5080/onlineshopping-eureka-server/eureka
+      defaultZone: http://peer1:8051/onlineshopping-eureka-server/eureka,http://peer2:8052/onlineshopping-eureka-server/eureka,http://peer3:8053/onlineshopping-eureka-server/eureka

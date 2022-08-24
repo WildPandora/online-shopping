@@ -1,5 +1,5 @@
 server:
-  port: 5080
+  port: 8053
   servlet:
     context-path: /onlineshopping-eureka-server
 spring:
@@ -12,7 +12,7 @@ eureka:
     #表示是否向eureka注册服务，即在自己的eureka中注册自己，默认为true，此处应该设置为false；
     register-with-eureka: true
     service-url:
-      defaultZone: http://peer1:5060/onlineshopping-eureka-server/eureka,http://peer2:5070/onlineshopping-eureka-server/eureka
+      defaultZone: http://peer1:8051/onlineshopping-eureka-server/eureka,http://peer2:8052/onlineshopping-eureka-server/eureka
   instance:
     hostname: peer3
   server:
